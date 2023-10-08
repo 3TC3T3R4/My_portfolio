@@ -1,7 +1,41 @@
-h1{
+:root{
 
-    color: gray;
+--white: #fff;
+--darkblue: #0d253f;
+--primary: #757575;
+--secondary: #090909;
+
+
+--primary-fount: 3.8rem;
+
+}
+
+
+
+html{
+
+    font-size: 62.5%; /*Esto es como un hacke en diseño*/
+    /*Ya que hace que se reinicio por decirlo asi la pantalla*/
+
+}
+body{
+font-size: 16px; /*Siempre se coloca lo que es el html y 
+el body que son los encargados de contener todo el codigo*/
+ /* 1rem = 10px */
+
+}
+
+h1.titulo{
+
     text-align: center;
-    
+    color: var(--primary);
+    font-size: 3.8rem;
+}
+
+.titulo span{
+
+font-size: 2rem;
+color:var(--darkblue);
+
 
 }
