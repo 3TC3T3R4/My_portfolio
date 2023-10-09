@@ -6,8 +6,6 @@
 --secondary: #090909;
 
 
---primary-fount: 3.8rem;
-
 }
 
 
@@ -22,6 +20,7 @@ body{
 font-size: 16px; /*Siempre se coloca lo que es el html y 
 el body que son los encargados de contener todo el codigo*/
  /* 1rem = 10px */
+font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -29,7 +28,9 @@ h1.titulo{
 
     text-align: center;
     color: var(--primary);
-    font-size: 3.8rem;
+    font-size: 2.8rem;
+    font-weight: normal;
+    
 }
 
 .titulo span{
