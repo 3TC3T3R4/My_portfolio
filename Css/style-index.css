@@ -8,8 +8,6 @@
 
 }
 
-
-
 html{
 
     font-size: 62.5%; /*Esto es como un hacke en diseño*/
@@ -38,5 +36,29 @@ h1.titulo{
 font-size: 2rem;
 color:var(--darkblue);
 
+}
 
+.nav-background{
+
+    background-color: var(--primary);
+
+}
+
+.main-navegation{
+
+ 
+}
+
+
+.container{
+
+width: 120rem; /*1200px tener en cuenta*/
+margin: 0%  auto  0% auto; /*0% arriba 0% derecha 0% abajo 0% izquierda*/
+
+
+}
+
+.test{
+
+    background-color: red;
 }
