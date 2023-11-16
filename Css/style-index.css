@@ -38,29 +38,36 @@ color:var(--darkblue);
 
 }
 
+.contenedor{
+
+    width: 120rem; /*1200px tener en cuenta*/
+    margin: 0%  auto; /*0% arriba 0% derecha 0% abajo 0% izquierda*/
+}
 .nav-background{
 
-    background-color: var(--primary);
+    background-color:orange;
 
 }
 
 .main-navegation{
+   
+background-color: var(--primary);
+padding: 1rem 0; /*El padding es como engordar el elemento */
+display: flex;
+flex-direction: row; /*El flex-direction te ayuda a trabajar verticalmente si utilizas la propiedad colum*/
+/*Por defecto es row para que los items sigan mostrandose uno despues del otro y no uno debajo de otro*/
+justify-content: space-between ; /* El justify te ayudara a trabajar horizontalmente*/
 
- 
 }
 
 .main-navegation a{
 
-    background-color: var(--darkblue);
-    display: block;
-}
-
-
-.container{
-
-width: 120rem; /*1200px tener en cuenta*/
-margin: 0%  auto  0% auto; /*0% arriba 0% derecha 0% abajo 0% izquierda*/
+color: var(--white);
+text-decoration: none;
 
 
 }
+
+
+
 
