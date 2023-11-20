@@ -4,7 +4,18 @@
 --darkblue: #0d253f;
 --primary: #757575;
 --secondary: #090909;
-
+--honey-yellow: #ffdb58;    /* for the combination with honey yellow */
+--navy-blue: #001f3f;       /* for the combination with navy blue */
+--sage-green: #68874e;      /* for the combination with sage green */
+--blush-pink: #ffc0cb;      /* for the combination with blush pink */
+--burnt-orange: #ff4500;    /* for the combination with burnt orange */
+/* --amarillo-miel: #ffdb58;  
+--azul-marino: #001f3f;    
+--verde-salvia: #68874e;  
+--rosa-palo: #ffc0cb;       
+--naranja-quemado: #ff4500
+--gris-raton: #757575
+*/
 
 }
 
@@ -18,9 +29,19 @@ body{
 font-size: 16px; /*Siempre se coloca lo que es el html y 
 el body que son los encargados de contener todo el codigo*/
  /* 1rem = 10px */
-font-family: Georgia, 'Times New Roman', Times, serif;
+font-family: Raleway, sans-serif;
 
 }
+
+video {
+    position: fixed; /* Fija el video en la ventana del navegador */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video para cubrir completamente su contenedor */
+    z-index: -1; /* Coloca el video detrás de otros elementos */
+  }
 
 h1.titulo{
 
@@ -43,31 +64,38 @@ color:var(--darkblue);
     width: 120rem; /*1200px tener en cuenta*/
     margin: 0%  auto; /*0% arriba 0% derecha 0% abajo 0% izquierda*/
 }
-.nav-background{
+.nav-background {
+    background-color: rgba(117, 117, 117, 0.8); /* Gris ratón con opacidad del 20% al principio */
 
-    background-color:orange;
-
+    transition: background-color 0.3s ease;
+  }
+  
+.main-navegation {
+    background-color: rgba(117, 117, 117, 01); /* Gris ratón con opacidad del 20% al principio */
+    /* Otros estilos del encabezado */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el fondo */
 }
+  
 
-.main-navegation{
-   
-background-color: var(--primary);
-padding: 1rem 0; /*El padding es como engordar el elemento */
-display: flex;
-flex-direction: row; /*El flex-direction te ayuda a trabajar verticalmente si utilizas la propiedad colum*/
-/*Por defecto es row para que los items sigan mostrandose uno despues del otro y no uno debajo de otro*/
-justify-content: space-between ; /* El justify te ayudara a trabajar horizontalmente*/
-
-}
 
 .main-navegation a{
 
 color: var(--white);
 text-decoration: none;
-
+font-size: 1.25rem;
+margin:  0 1.5rem;
+font-weight:bold; /* es como poner la letra en Negrita equivale a 700 px*/
+padding: 1rem;
+border-bottom: 2px solid transparent; /* Línea transparente por defecto */
+transition: background-color 0.3s ease; /* Transición suave */
+ 
 
 }
 
-
-
-
+/*Esto es un evento de CSS*/
+.main-navegation a:hover{
+    border-bottom: 2px solid var(--navy-blue); 
+}
