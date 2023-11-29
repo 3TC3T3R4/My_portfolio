@@ -59,24 +59,23 @@ color:var(--darkblue);
 
 }
 
-.contenedor{
+/* .contenedor{
 
-    width: 120rem; /*1200px tener en cuenta*/
-    margin: 0%  auto; /*0% arriba 0% derecha 0% abajo 0% izquierda*/
-}
+    width: 120rem; /*1200px tener en cuenta
+    margin: 0%  auto; /*0% arriba 0% derecha 0% abajo 0% izquierda
+} 
+*/
 .nav-background {
-    background-color: rgba(117, 117, 117, 0.8); /* Gris ratón con opacidad del 20% al principio */
+    background-color: rgba(117, 117, 117, 0.1); /* Gris ratón con opacidad del 20% al principio */
 
-    transition: background-color 0.3s ease;
-  }
-  
+}
 .main-navegation {
-    background-color: rgba(117, 117, 117, 01); /* Gris ratón con opacidad del 20% al principio */
+    background-color: rgba(117, 117, 117, 0.2); /* Gris ratón con opacidad del 20% al principio */
     /* Otros estilos del encabezado */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    transition: background-color 0.3s ease; /* Transición suave al cambiar el fondo */
+   
 }
   
 
@@ -85,17 +84,17 @@ color:var(--darkblue);
 
 color: var(--white);
 text-decoration: none;
-font-size: 1.25rem;
+font-size: 1.60rem;
 margin:  0 1.5rem;
 font-weight:bold; /* es como poner la letra en Negrita equivale a 700 px*/
-padding: 1rem;
+padding: 1.5rem;
 border-bottom: 2px solid transparent; /* Línea transparente por defecto */
 transition: background-color 0.3s ease; /* Transición suave */
- 
 
 }
 
 /*Esto es un evento de CSS*/
 .main-navegation a:hover{
-    border-bottom: 2px solid var(--navy-blue); 
+    border-bottom: 2px solid var(--primary); 
+    color: var(--burnt-orange);
 }
